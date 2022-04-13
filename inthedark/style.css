@@ -1,0 +1,117 @@
+*{
+  margin:0;
+  padding:0;
+  border:none;
+}
+
+body{
+  background-color: black;
+}
+
+#wrapper{
+  max-width:1200px;
+  background-color: white;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+p{
+  margin-bottom: 1em;
+  line-height: 1.5em;
+}
+
+.lead{
+  color:white;
+  width:500px;
+}
+
+header{
+background: rgb(8,7,7);
+background:
+linear-gradient(90deg, rgba(8,7,7,1) 32%, rgba(1,1,1,0.0004595588235294379) 38%),
+url("images/inthedark.jpg") no-repeat top right;
+
+
+margin-left:auto;
+margin-right:auto;
+padding:2em;
+padding-bottom:4em;
+  padding: 2em;
+}
+
+
+.btn{
+  padding:10px;
+  padding-left: 35px;
+  border:solid 1px #fff;
+  color:#fff;
+  border-radius: 5px;
+  text-decoration: none;
+  background-image: url("images/playbutton.svg");
+  background-position: 5px center;
+  background-repeat: no-repeat;
+}
+
+nav{
+  background-color: #999;
+  padding-top:0.0em;
+  padding-bottom:0.8en;
+}
+
+nav li{
+  display: inline;
+  margin-left:2em;
+}
+
+nav a{
+  color:#fff;
+  text-decoration: none;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+main,footer{
+  padding:2em
+}
+
+.col-left{
+  width:48%;
+  float:left;
+}
+.col-right{
+  width:48%;
+  float:right;
+}
+
+footer{
+  clear:both;
+}
+
+#about  .column p{
+
+}
+
+/* Episodes styles */
+.episodes{display: flex;
+flex-wrap: wrap;}
+
+.episode-card{
+  width:224px
+  background-color:lightgreen;
+  padding:2em;
+  margin:1em;
+  flex:1 0 224px;
+}
+
+/* styles for mobile devices */
+
+@media (max-width: 575px){
+
+.col-left{
+ width:100%;
+ float:none;
+}
+
+} /* ends media query*/
