@@ -1,0 +1,228 @@
+/*rest  of browser default*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,400&family=Pacifico&display=swap');
+*{
+  margin:0;
+  padding:0;
+  border: none;
+}
+
+
+#wrapper{
+  max-width:1200px;
+  margin:0 auto;
+  font-family: 'Lato', sans-serif;
+
+}
+
+header{
+  display:flex;
+  justify-content: space-between;
+}
+.program-card h3{
+  color:green;
+}
+.program-card h2{
+  color:plum;
+}
+.program-nav h2{
+  color:plum;
+}
+h1{
+  font-weight:900;
+
+}
+
+.topmenu{
+  display: none;
+}
+a{
+  color:green;
+  text-decoration: none;
+}
+
+a:hover{
+  color:blue;
+}
+
+.topmenu li{
+  list-style: none;
+  border-bottom: solid 1px gray;
+  padding: 1em;
+}
+
+.search input{
+  border: solid 1px gray;
+  padding:0.5em;
+  margin:1em;
+}
+
+.topnav img{
+  float:right;
+}
+.topmenu li{
+  list-style-type: none;
+  border-bottom: solid 1px gray;
+  paddinh: 1em;
+}
+.search input{
+  border: solid 1px gray
+  padding:0.5em;
+  margin:1em;
+}
+
+/* *** Program Nav ** */
+
+.program-nav li{
+  border: solid 1px gray;
+  list-style-type: none;
+}
+
+.program-nav li a{
+  padding:1em;
+  display:block;
+  color: black;
+  text-decoration: none;
+}
+.program-card{
+  border:solid 1px #ccc;
+  border-radius: 10px;
+  overflow:hidden;
+  transition:
+    transform .5s ease,
+    box-shadow .5s ease;
+  height:100%
+}
+
+.program-card img{
+  width:100%;
+}
+
+.card-body{
+    padding:1em;
+    line-height:1.5em;
+}
+
+.program-card h2, .card h3, .card h4{
+    margin:0;
+    line-height:1.7em;
+}
+
+.program-card h3{
+  text-transform:uppercase;
+  font-size:1em;
+}
+
+.program-card:hover{
+    transform: translate(0px, -5px);
+    box-shadow: 0px 5px 30px #999;
+}
+
+
+.dropdown{
+ display:none;
+}
+
+.program-nav li:hover .dropdown{
+  display:block;
+}
+
+/* *** Banner Styles ***** */
+
+.banner{
+  margin:2em 0;
+  padding:2em;
+  background-image: url("images/queenslowres.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 15em;
+  color:white;
+  font-size:1em;
+}
+
+p{
+  margin-bottom:1em;
+}
+h2{
+  margin-bottom:1em;
+}
+h3{
+  margin-bottom:1em;
+}
+
+
+@media (min-width: 768px){
+ .topmenu{
+   clear:right;
+   display:block;
+   border:none;
+ }
+ .program-nav-menu{
+   display:flex;
+   justify-content: space-between;
+ }
+ .programs{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap:2rem;
+  grid-row-gap:2rem;
+}
+.programs a{
+  color:black;
+  text-decoration:none;
+}
+
+.topnav img{
+  display:none;
+}
+
+.topmenu li{
+  display:inline;
+  border:none;
+}
+
+.topmenu ul{
+  display:inline;
+  border:none;
+}
+
+.topmenu form{
+  display: inline;
+  border:none;
+}
+/* Program Menu */
+
+.program-nav li{
+  background-color: #ccc;
+  width:30%;
+  position:relative;
+}
+
+.program-nv-menu{
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown{
+  position: absolute;
+  width:100%;
+  left:-1px;
+}
+
+.dropdown li{
+  width:100%;
+}
+
+/* main area layout */
+
+#home main{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 2em;
+}
+
+.events img{
+  width:100%;
+}
+
+} /*closing media query */
